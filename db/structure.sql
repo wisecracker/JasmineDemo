@@ -1,0 +1,1 @@
+INSERT INTO schema_migrations (version) VALUES ('20130306231945');INSERT INTO schema_migrations (version) VALUES ('20130306231945');
