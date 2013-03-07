@@ -18,7 +18,8 @@ describe("Tasks", function() {
 	  });
 
 	  runs(function() {
-	    expect(callback).toHaveBeenCalled();
+	  	var dataFromRails = callback.mostRecentCall.args[0];
+	    expect(dataFromRails["title"]).toBe("Learn Jasmine");
 	  });
 
 	});

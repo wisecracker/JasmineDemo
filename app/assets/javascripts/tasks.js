@@ -3,9 +3,9 @@ function createTask(data, callback) {
     type: "POST",
     url: "http://localhost:3000/tasks",
     data: data,
-    complete: callback,
+    success: callback,
+    error: callback,
     dataType: "JSON",
-    crossDomain: true
   });
 
   return false;
