@@ -8,6 +8,7 @@ gem 'rails', '3.2.12'
 gem 'sqlite3'
 
 gem "jasmine"
+gem "thin"
 
 
 # Gems used only for assets and not required
