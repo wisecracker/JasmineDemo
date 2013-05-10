@@ -11,7 +11,7 @@ describe("Tasks", function() {
 	    }
 	  }
 
-	  createTask(data, callback);	  
+	  createTask(data, callback);
 
       waitsFor(function() {
         return callback.callCount > 0;
@@ -19,6 +19,7 @@ describe("Tasks", function() {
 
 	  runs(function() {
 	  	var dataFromRails = callback.mostRecentCall.args[0];
+      expect(dataFromRails.statusText).toNotBe("error");
 	    expect(dataFromRails["title"]).toBe("Learn Jasmine");
 	  });
 
